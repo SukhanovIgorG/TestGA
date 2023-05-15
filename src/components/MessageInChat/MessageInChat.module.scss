@@ -1,0 +1,15 @@
+@mixin container {
+  background-color: rgb(94, 94, 89);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.message_container {
+  @include container();
+  width: min-content;
+}
+
+.message_container_owner {
+  @include container();
+  align-self: flex-end;
+}
